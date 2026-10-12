@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="펫로그 도움말 및 지원. PetDiary Help and support.">
+  <title>도움말 및 지원 / Help and support · 펫로그 PetDiary</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <p class="brand">펫로그 <span lang="en">/ PetDiary</span></p>
+    <nav aria-label="페이지 및 언어"><a href="../privacy/index.html">개인정보 처리방침 / Privacy</a></nav>
+  </header>
+  <main id="main">
+    <p class="eyebrow">한국어 · <span lang="en">English</span></p>
+    <h1>도움말 및 지원<br><span lang="en">Help and support</span></h1>
+    <p>읽기 편한 언어를 선택해 주세요. 한국어가 원문입니다.</p>
+    <p lang="en">Choose the language you prefer. The Korean page is the original; the English page is a translation.</p>
+    <div class="notice"><p id="language-guide">브라우저의 기본 언어에 맞는 페이지를 아래에서 선택해 주세요. <span lang="en">Choose Korean or English below to match your browser language.</span></p></div>
+    <div class="language-grid">
+      <a class="language-card" href="ko/index.html" hreflang="ko" lang="ko"><strong>한국어</strong><span>도움말 및 지원</span></a>
+      <a class="language-card" href="en/index.html" hreflang="en" lang="en"><strong>English</strong><span>Help and support</span></a>
+    </div>
+  </main>
+  <footer class="site-footer">펫로그 <span lang="en">/ PetDiary · 버전 1.0</span></footer>
+  <!-- Local recommendation only: no redirect, requests, storage, or external script. -->
+  <script>
+    (() => {
+      const preferred = (navigator.languages && navigator.languages[0]) || navigator.language || "ko";
+      const korean = preferred.toLowerCase().startsWith("ko");
+      const guide = document.getElementById("language-guide");
+      const link = document.createElement("a");
+      link.href = korean ? "ko/index.html" : "en/index.html";
+      link.hreflang = korean ? "ko" : "en";
+      link.lang = korean ? "ko" : "en";
+      link.textContent = korean ? "한국어 페이지 열기" : "Open the English page";
+      guide.lang = korean ? "ko" : "en";
+      guide.textContent = korean
+        ? "브라우저의 기본 언어에 맞춰 한국어를 추천합니다. "
+        : (preferred.toLowerCase().startsWith("en")
+          ? "Based on your browser language, we recommend English. "
+          : "This page is available in Korean and English. We suggest English for your browser language. ");
+      guide.appendChild(link);
+    })();
+  </script>
+</body>
+</html>

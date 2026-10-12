@@ -1,0 +1,89 @@
+:root {
+  color-scheme: light dark;
+  --background: #FFF7EE;
+  --surface: #FFFCF8;
+  --text: #5A4334;
+  --accent: #B0532A;
+  --muted: #755D4B;
+  --border: #DFCAB7;
+  --tint: #FFF0E3;
+}
+* { box-sizing: border-box; }
+html { font-size: 100%; scroll-padding-top: 1rem; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+a { color: var(--accent); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: .15em; }
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 5px;
+  border-radius: .15rem;
+}
+.skip-link { position: absolute; top: .5rem; left: .5rem; padding: .6rem 1rem; background: var(--surface); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+.site-header, main, .site-footer { width: min(100% - 2rem, 54rem); margin-inline: auto; }
+.site-header { padding-block: 2rem 1rem; border-bottom: 1px solid var(--border); }
+.brand { margin: 0 0 .75rem; font-weight: 750; font-size: 1.15rem; letter-spacing: .02em; }
+nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+nav a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+main { padding-block: 2rem 3rem; }
+h1, h2, h3 { line-height: 1.35; text-wrap: balance; }
+h1 { margin: .25rem 0 1rem; font-size: clamp(1.85rem, 5vw, 2.75rem); letter-spacing: -.035em; }
+h2 { margin: 2.5rem 0 .75rem; font-size: 1.4rem; }
+h3 { margin: 1.5rem 0 .5rem; font-size: 1.1rem; }
+p { margin-block: .75rem; }
+li + li { margin-top: .5rem; }
+.eyebrow { color: var(--accent); font-weight: 700; font-size: .9rem; }
+.lead { font-size: 1.1rem; }
+.meta, .site-footer { color: var(--muted); font-size: .9rem; }
+.notice { background: var(--tint); border-left: .25rem solid var(--accent); border-radius: .3rem 1rem 1rem .3rem; padding: 1rem 1.25rem; margin-block: 1.5rem; }
+.notice p:first-child { margin-top: 0; }
+.notice p:last-child { margin-bottom: 0; }
+.language-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-block: 1.5rem; }
+.language-card { display: flex; flex-direction: column; justify-content: center; min-height: 7rem; padding: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; }
+.language-card strong { font-size: 1.35rem; }
+.language-card span { color: var(--muted); font-size: .95rem; }
+.table-wrap { overflow-x: auto; margin-block: 1rem; }
+table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: .95rem; }
+caption { text-align: left; font-weight: 700; padding-block: .5rem; }
+th, td { padding: .85rem; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+th { background: var(--tint); }
+thead th:nth-child(1) { width: 25%; }
+.contact { padding: 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; }
+.email { font-weight: 700; user-select: all; }
+details { background: var(--surface); border: 1px solid var(--border); border-radius: 1rem; margin-block: .85rem; padding: 1rem 1.25rem; }
+summary { cursor: pointer; font-weight: 700; min-height: 2.75rem; align-content: center; }
+details p:last-child { margin-bottom: 0; }
+.site-footer { padding-block: 1.5rem 2rem; border-top: 1px solid var(--border); }
+@media (max-width: 36rem) {
+  .language-grid { grid-template-columns: 1fr; }
+  .site-header { padding-top: 1.25rem; }
+  main { padding-top: 1.5rem; }
+  th, td { padding: .65rem; }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #211A16;
+    --surface: #2D241E;
+    --text: #F7E7D8;
+    --accent: #F2AA7F;
+    --muted: #D3BAA5;
+    --border: #69503E;
+    --tint: #3B2B21;
+  }
+}
+@media print {
+  :root { color-scheme: light; --background: #fff; --surface: #fff; --text: #222; --accent: #333; --muted: #444; --border: #aaa; --tint: #eee; }
+  .site-header nav, .skip-link { display: none; }
+  main { padding-block: 1rem; }
+  h2, h3 { break-after: avoid; }
+  tr, .contact { break-inside: avoid; }
+}
