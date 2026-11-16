@@ -18,17 +18,17 @@
     <p class="eyebrow">Your privacy</p>
     <h1>Privacy policy</h1>
     <!-- The owner may change this effective date to the actual launch date. Update the Korean page too. -->
-    <p class="meta">Effective: <time datetime="2026-10-08">October 8, 2026</time> · English translation of the Korean original</p>
-    <p class="lead">PetDiary helps you keep a diary of your pet’s life on your iPhone or iPad. There are no accounts, sign-in, developer-operated servers, or in-app cloud sync.</p>
-    <div class="notice"><p><strong>Your diary stays on your device. Advertising data is handled separately.</strong> The developer does not collect or access your pet profiles, entries, or photos. When advertising is enabled, Google’s advertising SDK may collect information used to deliver ads and support its services.</p></div>
+    <p class="meta">Effective: <time datetime="2026-11-16">November 16, 2026</time> · English translation of the Korean original</p>
+    <p class="lead">PetDiary helps you keep a diary of your pet’s life on your iPhone, iPad, or Android device. There are no accounts, sign-in, developer-operated servers, or in-app cloud sync.</p>
+    <div class="notice"><p><strong>Your diary stays on your device. Advertising data is handled separately.</strong> The developer does not collect or access your pet profiles, entries, or photos. In the iPhone and iPad version, when advertising is enabled, Google’s advertising SDK may collect information used to deliver ads and support its services.</p></div>
 
     <section aria-labelledby="operator">
       <h2 id="operator">1. Who operates the app</h2>
       <p>Operator and privacy contact: the developer and operator of PetDiary<br>Email: <a class="email" href="mailto:bitsae.mooni@gmail.com">bitsae.mooni@gmail.com</a></p>
-      <p>This policy covers PetDiary (펫로그), an iPhone and iPad app requiring iOS or iPadOS 17 or later.</p>
+      <p>This policy covers PetDiary (펫로그) for iPhone and iPad (iOS or iPadOS 17 or later) and PetDiary for Android (Android 10 or later). Sections 2 to 6 describe the iPhone and iPad version; the Android version is covered in Section 7.</p>
     </section>
     <section aria-labelledby="information">
-      <h2 id="information">2. Information, purposes, storage, and retention</h2>
+      <h2 id="information">2. (iPhone and iPad) Information, purposes, storage, and retention</h2>
       <p>Information processed locally by the app is separate from information collected by external services. You do not need to submit personal information to the developer to use the diary.</p>
       <div class="table-wrap">
         <table>
@@ -45,12 +45,12 @@
       <p>Depending on iOS or iPadOS policies and your settings, on-device entries and photos may be included in an iCloud or computer backup. This is device backup, rather than PetDiary cloud sync. You manage backups through Apple’s services and your device’s backup settings.</p>
     </section>
     <section aria-labelledby="photos">
-      <h2 id="photos">3. Photos and camera access</h2>
+      <h2 id="photos">3. (iPhone and iPad) Photos and camera access</h2>
       <p>PetDiary imports only the photos you choose in the system photo picker or take yourself. It does not request full access to your photo library. The camera is used only when you tap “Take a photo”; iOS or iPadOS may then ask for camera permission.</p>
       <p>When saving a photo, the app removes original metadata, including GPS location and camera EXIF, and saves only the image pixels. This affects the copy stored in PetDiary, leaving the original in your photo library unchanged. Visible details in the image, such as faces or street addresses, remain in the picture.</p>
     </section>
     <section aria-labelledby="advertising">
-      <h2 id="advertising">4. Advertising SDKs and third-party collection</h2>
+      <h2 id="advertising">4. (iPhone and iPad) Advertising SDKs and third-party collection</h2>
       <p>PetDiary uses Google Mobile Ads SDK 13.11.0 and Google’s UMP consent SDK. The advertising SDK is not started during the first three days (72 hours) after installation. After that period, banner ads may appear at the bottom of Home, Album, and Weight when ad removal is not active and the consent status permits ad requests.</p>
       <p>Ad requests use the non-personalized setting (<code>npa=1</code>). The app does not request App Tracking Transparency (ATT) permission. Non-personalized ads can still process information needed to deliver and measure advertising.</p>
       <h3>Information the SDK may collect</h3>
@@ -67,31 +67,57 @@
       <p>PetDiary has no separate analytics or crash-reporting SDK. The advertising SDK itself may collect diagnostic and performance information as described above.</p>
     </section>
     <section aria-labelledby="choices">
-      <h2 id="choices">5. Consent and privacy choices</h2>
+      <h2 id="choices">5. (iPhone and iPad) Consent and privacy choices</h2>
       <p>Google UMP may display a consent screen in regions such as Europe where consent is needed. When UMP requires a privacy-options entry point, “Ad privacy choices” appears in Settings so you can revisit your choices. This option may be absent depending on your region and consent status.</p>
       <p>You can change camera permission in iOS or iPadOS Settings. Applying the ad removal purchase removes the app’s banner ads. For information already processed by external services, follow Google’s guidance on deletion requests.</p>
     </section>
     <section aria-labelledby="purchases">
-      <h2 id="purchases">6. Purchases</h2>
+      <h2 id="purchases">6. (iPhone and iPad) Purchases</h2>
       <p>“Remove ads” is a one-time, non-consumable in-app purchase. You can review the price in the App Store purchase sheet before paying. Apple handles payment; the app does not receive payment details such as your card number or billing information. The app checks purchase and restoration status to apply ad removal.</p>
       <p>Use “Restore purchases” in Settings to restore an existing purchase. This restores your ad removal entitlement; it does not restore pet entries or photos.</p>
     </section>
+    <section aria-labelledby="android">
+      <h2 id="android">7. PetDiary for Android</h2>
+      <p>This section applies to PetDiary for Android (Android 10 or later) from Google Play. The Android version has no ads, no in-app purchases, no accounts, and no developer servers.</p>
+      <p><strong>No internet access.</strong> The Android version does not request the internet permission, so the app itself cannot send information off your device. It contains no advertising, analytics, or crash-reporting SDKs. The developer does not collect or see your pets’ profiles, records, or photos.</p>
+      <h3>Information processed and where it is stored</h3>
+      <div class="table-wrap">
+        <table>
+          <caption>How the Android version handles information</caption>
+          <thead><tr><th scope="col">Information</th><th scope="col">Purpose and storage</th><th scope="col">Retention</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Pet profiles and records</th><td>Mood, food, water, potty, walks, weight, diary, medicine, vaccination and vet notes, symptoms, and similar entries are shown and managed in the app and stored only in the app’s private storage on your device.</td><td>Until you delete the record or pet, or uninstall the app</td></tr>
+            <tr><th scope="row">Photos you pick or take</th><td>A copy with original details (location, EXIF) removed is stored in the app’s private storage for profiles, records, and the album.</td><td>Same as above</td></tr>
+            <tr><th scope="row">Share card images you create</th><td>Saved to Pictures/PetDiary in your gallery when you tap “Save to Gallery”, or passed to the app you choose when you tap “Share Image”.</td><td>Images saved to your gallery stay after you uninstall the app; delete them in your gallery.</td></tr>
+            <tr><th scope="row">Email inquiries</th><td>Replying and handling requests</td><td>Deleted after the inquiry is resolved, unless the law requires otherwise</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Photos and camera</h3>
+      <p>PetDiary only receives the photos you pick in the Android system photo picker and does not request access to your whole photo library. When you tap “Take Photo”, your device’s camera app takes the picture and hands it to PetDiary; PetDiary does not request the camera permission. Your original photos are not changed.</p>
+      <h3>Backup</h3>
+      <p>If Google backup is turned on for your Android device, your pet profiles, daily records, and app settings are included in your Google account backup, so you can restore them after switching or resetting your device. Photos are not included in Google backup; they move along only when you transfer directly to a new device (Android 12 or later). Google keeps this backup in your account and the developer cannot see it. The developer keeps no copy of your records and cannot restore them. The app has no sync of its own.</p>
+      <h3>Deletion</h3>
+      <p>You can edit or delete records in the app. Deleting a pet also deletes that pet’s records and photos. Uninstalling the app deletes all data in its private storage. Share card images saved to your gallery or sent to other apps remain regardless of uninstalling.</p>
+      <h3>Ads and purchases</h3>
+      <p>The Android version has no ads and no in-app purchases. The ad SDK and Remove Ads sections of this policy (Sections 2, 4, 5, and 6) apply only to the iPhone and iPad version.</p>
+    </section>
     <section aria-labelledby="deletion">
-      <h2 id="deletion">7. Retention, deletion, and your rights</h2>
+      <h2 id="deletion">8. Retention, deletion, and your rights</h2>
       <p>You can view, edit, and delete entries in the app. Deleting a pet in its profile editor also deletes that pet’s entries and photos stored by the app. Deleting the app removes all of its on-device data. The developer keeps no separate copy of your diary and cannot retrieve, recover, or edit it for you.</p>
       <p>Deletion removes entries and photo files from the app’s storage. It does not automatically delete original photos from your photo library or copies in existing iCloud or computer backups. Manage those copies separately through the relevant backup service or device.</p>
       <p>Contact the email address below to request access, correction, or deletion of information in your support emails, or to ask about this policy. For choices or deletion relating to information collected by external advertising services, use Google’s guidance. The developer cannot directly delete advertising information it does not hold.</p>
     </section>
     <section aria-labelledby="children">
-      <h2 id="children">8. Children</h2>
+      <h2 id="children">9. Children</h2>
       <p>PetDiary is not designed for children. It does not require account registration or the submission of children’s personal information. Contact the developer if you have concerns about information relating to a child.</p>
     </section>
     <section aria-labelledby="changes">
-      <h2 id="changes">9. Policy changes</h2>
+      <h2 id="changes">10. Policy changes</h2>
       <p>If app features or information practices change, we will update this page and its effective date. Significant changes will be announced here before they take effect. Any additional notice or consent required by law will be handled as required.</p>
     </section>
     <section aria-labelledby="contact" class="contact">
-      <h2 id="contact">10. Privacy inquiries</h2>
+      <h2 id="contact">11. Privacy inquiries</h2>
       <p>For questions and privacy requests: <a class="email" href="mailto:bitsae.mooni@gmail.com">bitsae.mooni@gmail.com</a></p>
       <p>Please share only what is needed to explain the issue. You do not need to send your full diary, photo collection, payment details, or passwords.</p>
       <p>For help using the app, visit <a href="../../support/en/index.html">Help and support</a>.</p>
